@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>question</key>
+		<string>Name the individuals primarily credited with the creation of Objective-C:</string>
+		<key>answer1</key>
+		<string>Ray Wenderlich and Dani Arnaout</string>
+		<key>answer2</key>
+		<string>Brad Cox and Tom Love</string>
+		<key>answer3</key>
+		<string>Steve jobs and Bill Gates</string>
+		<key>answer4</key>
+		<string>Bruce Wayne and Dick Grayson</string>
+		<key>correctAnswer</key>
+		<integer>2</integer>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Which of the following is a valid comment in Objective-C?</string>
+		<key>answer1</key>
+		<string>- This is a comment</string>
+		<key>answer2</key>
+		<string>|| This is a comment</string>
+		<key>answer3</key>
+		<string>// This is not a comment</string>
+		<key>answer4</key>
+		<string>/* This is a comment /*</string>
+		<key>correctAnswer</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>By convention, a class implementation is stored in a file with which extension?</string>
+		<key>answer1</key>
+		<string>.h</string>
+		<key>answer2</key>
+		<string>.m</string>
+		<key>answer3</key>
+		<string>.c</string>
+		<key>answer4</key>
+		<string>.cpp</string>
+		<key>correctAnswer</key>
+		<integer>2</integer>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>What does ARC stands for?</string>
+		<key>answer1</key>
+		<string>Automated Reduced Cycling</string>
+		<key>answer2</key>
+		<string>Air Race Car</string>
+		<key>answer3</key>
+		<string>Automatic Reference Counting</string>
+		<key>answer4</key>
+		<string>Advanced Retain Counter</string>
+		<key>correctAnswer</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Which of these is NOT a native framework</string>
+		<key>answer1</key>
+		<string>iAd</string>
+		<key>answer2</key>
+		<string>CoreGraphics</string>
+		<key>answer3</key>
+		<string>UIKit</string>
+		<key>answer4</key>
+		<string>VDFoundation</string>
+		<key>correctAnswer</key>
+		<integer>4</integer>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Which of these is responsible for your app&apos;s name</string>
+		<key>answer1</key>
+		<string>Bundle identifier</string>
+		<key>answer2</key>
+		<string>Bund display name</string>
+		<key>answer3</key>
+		<string>Bundle name</string>
+		<key>answer4</key>
+		<string>Bundle base name</string>
+		<key>correctAnswer</key>
+		<integer>2</integer>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Which of these methods gets called when the view loads?</string>
+		<key>answer1</key>
+		<string>viewDidLoad</string>
+		<key>answer2</key>
+		<string>viewWillDisappear</string>
+		<key>answer3</key>
+		<string>dealloc</string>
+		<key>answer4</key>
+		<string>viewDidUnload</string>
+		<key>correctAnswer</key>
+		<integer>1</integer>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>What&apos;s the size of a push notification message?</string>
+		<key>answer1</key>
+		<string>32bytes</string>
+		<key>answer2</key>
+		<string>64bytes</string>
+		<key>answer3</key>
+		<string>128bytes</string>
+		<key>answer4</key>
+		<string>256bytes</string>
+		<key>correctAnswer</key>
+		<integer>4</integer>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Which one of these is NOT a Foundation Class</string>
+		<key>answer1</key>
+		<string>NSString</string>
+		<key>answer2</key>
+		<string>NSArray</string>
+		<key>answer3</key>
+		<string>NSGroup</string>
+		<key>answer4</key>
+		<string>NSSet</string>
+		<key>correctAnswer</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>What does KVO stands for?</string>
+		<key>answer1</key>
+		<string>Key Value Observing</string>
+		<key>answer2</key>
+		<string>Key Variable Overriding</string>
+		<key>answer3</key>
+		<string>Kind Volt Ordering</string>
+		<key>answer4</key>
+		<string>King Vilo Oprus</string>
+		<key>correctAnswer</key>
+		<integer>1</integer>
+	</dict>
+</array>
+</plist>

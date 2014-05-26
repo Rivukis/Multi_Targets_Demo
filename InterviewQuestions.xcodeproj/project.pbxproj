@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A3525561933E3D9004877CD /* IQAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E1AA0718B8F9CE0006A672 /* IQAppDelegate.m */; };
+		7A3525571933E3D9004877CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E1AA0318B8F9CE0006A672 /* main.m */; };
+		7A3525581933E3D9004877CD /* IQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E1AA0D18B8F9CE0006A672 /* IQViewController.m */; };
+		7A35255A1933E3D9004877CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E1A9F918B8F9CE0006A672 /* CoreGraphics.framework */; };
+		7A35255B1933E3D9004877CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E1A9FB18B8F9CE0006A672 /* UIKit.framework */; };
+		7A35255C1933E3D9004877CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E1A9F718B8F9CE0006A672 /* Foundation.framework */; };
+		7A35255E1933E3D9004877CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92E1AA0018B8F9CE0006A672 /* InfoPlist.strings */; };
+		7A3525611933E3D9004877CD /* Questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92E1AA5718B9034D0006A672 /* Questions.plist */; };
+		7A3525621933E3D9004877CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E1AA0918B8F9CE0006A672 /* Main.storyboard */; };
+		7A35256C1933E76F004877CD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A3525691933E76F004877CD /* Default-568h@2x.png */; };
+		7A35256D1933E76F004877CD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A35256A1933E76F004877CD /* Default@2x.png */; };
+		7A35256E1933E76F004877CD /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A35256B1933E76F004877CD /* Icon@2x.png */; };
 		92E1A9F818B8F9CE0006A672 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E1A9F718B8F9CE0006A672 /* Foundation.framework */; };
 		92E1A9FA18B8F9CE0006A672 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E1A9F918B8F9CE0006A672 /* CoreGraphics.framework */; };
 		92E1A9FC18B8F9CE0006A672 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E1A9FB18B8F9CE0006A672 /* UIKit.framework */; };
@@ -37,6 +49,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A3525671933E3D9004877CD /* InterviewQuestionsFull.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewQuestionsFull.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A3525681933E3D9004877CD /* InterviewQuestionsFull.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = InterviewQuestionsFull.plist; path = "/Users/Rivukis/Developer/Tutorial Projects/Interview Questions Starter/InterviewQuestions/InterviewQuestionsFull.plist"; sourceTree = "<absolute>"; };
+		7A3525691933E76F004877CD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Images/Full/Default-568h@2x.png"; sourceTree = "<group>"; };
+		7A35256A1933E76F004877CD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Images/Full/Default@2x.png"; sourceTree = "<group>"; };
+		7A35256B1933E76F004877CD /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Images/Full/Icon@2x.png"; sourceTree = "<group>"; };
 		92E1A9F418B8F9CE0006A672 /* InterviewQuestionsFree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewQuestionsFree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E1A9F718B8F9CE0006A672 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		92E1A9F918B8F9CE0006A672 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,6 +79,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7A3525591933E3D9004877CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A35255A1933E3D9004877CD /* CoreGraphics.framework in Frameworks */,
+				7A35255B1933E3D9004877CD /* UIKit.framework in Frameworks */,
+				7A35255C1933E3D9004877CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		92E1A9F118B8F9CE0006A672 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -88,6 +115,9 @@
 		921F93D418D206B30056FDDA /* Full */ = {
 			isa = PBXGroup;
 			children = (
+				7A3525691933E76F004877CD /* Default-568h@2x.png */,
+				7A35256A1933E76F004877CD /* Default@2x.png */,
+				7A35256B1933E76F004877CD /* Icon@2x.png */,
 			);
 			name = Full;
 			sourceTree = "<group>";
@@ -107,6 +137,7 @@
 			children = (
 				92E1A9F418B8F9CE0006A672 /* InterviewQuestionsFree.app */,
 				92E1AA1518B8F9CE0006A672 /* InterviewQuestionsTests.xctest */,
+				7A3525671933E3D9004877CD /* InterviewQuestionsFull.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +171,7 @@
 			children = (
 				92E1AA4A18B8FFF10006A672 /* Images */,
 				92E1A9FF18B8F9CE0006A672 /* InterviewQuestionsFree.plist */,
+				7A3525681933E3D9004877CD /* InterviewQuestionsFull.plist */,
 				92E1AA5718B9034D0006A672 /* Questions.plist */,
 				92E1AA0018B8F9CE0006A672 /* InfoPlist.strings */,
 				92E1AA0318B8F9CE0006A672 /* main.m */,
@@ -188,6 +220,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7A3525541933E3D9004877CD /* InterviewQuestionsFull */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A3525641933E3D9004877CD /* Build configuration list for PBXNativeTarget "InterviewQuestionsFull" */;
+			buildPhases = (
+				7A3525551933E3D9004877CD /* Sources */,
+				7A3525591933E3D9004877CD /* Frameworks */,
+				7A35255D1933E3D9004877CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InterviewQuestionsFull;
+			productName = InterviewQuestions;
+			productReference = 7A3525671933E3D9004877CD /* InterviewQuestionsFull.app */;
+			productType = "com.apple.product-type.application";
+		};
 		92E1A9F318B8F9CE0006A672 /* InterviewQuestionsFree */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92E1AA2618B8F9CE0006A672 /* Build configuration list for PBXNativeTarget "InterviewQuestionsFree" */;
@@ -252,12 +301,26 @@
 			projectRoot = "";
 			targets = (
 				92E1A9F318B8F9CE0006A672 /* InterviewQuestionsFree */,
+				7A3525541933E3D9004877CD /* InterviewQuestionsFull */,
 				92E1AA1418B8F9CE0006A672 /* InterviewQuestionsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7A35255D1933E3D9004877CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A35256D1933E76F004877CD /* Default@2x.png in Resources */,
+				7A35256E1933E76F004877CD /* Icon@2x.png in Resources */,
+				7A35255E1933E3D9004877CD /* InfoPlist.strings in Resources */,
+				7A3525611933E3D9004877CD /* Questions.plist in Resources */,
+				7A3525621933E3D9004877CD /* Main.storyboard in Resources */,
+				7A35256C1933E76F004877CD /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		92E1A9F218B8F9CE0006A672 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -282,6 +345,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7A3525551933E3D9004877CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A3525561933E3D9004877CD /* IQAppDelegate.m in Sources */,
+				7A3525571933E3D9004877CD /* main.m in Sources */,
+				7A3525581933E3D9004877CD /* IQViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		92E1A9F018B8F9CE0006A672 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -338,6 +411,29 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7A3525651933E3D9004877CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InterviewQuestions/InterviewQuestions-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/InterviewQuestionsFull.plist";
+				PRODUCT_NAME = InterviewQuestionsFull;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7A3525661933E3D9004877CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InterviewQuestions/InterviewQuestions-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/InterviewQuestionsFull.plist";
+				PRODUCT_NAME = InterviewQuestionsFull;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		92E1AA2418B8F9CE0006A672 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -413,7 +509,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InterviewQuestions/InterviewQuestions-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"FREE=1",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/InterviewQuestions/InterviewQuestionsFree.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -425,6 +524,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InterviewQuestions/InterviewQuestions-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "FREE=1";
 				INFOPLIST_FILE = "$(SRCROOT)/InterviewQuestions/InterviewQuestionsFree.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -474,6 +574,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7A3525641933E3D9004877CD /* Build configuration list for PBXNativeTarget "InterviewQuestionsFull" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A3525651933E3D9004877CD /* Debug */,
+				7A3525661933E3D9004877CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		92E1A9EF18B8F9CE0006A672 /* Build configuration list for PBXProject "InterviewQuestions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

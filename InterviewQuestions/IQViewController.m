@@ -17,6 +17,8 @@
 @property (assign, nonatomic) NSInteger currentQuestionIndex;
 @property (assign, nonatomic) NSInteger maxAllowedQuestions;
 @property (assign, nonatomic) NSInteger score;
+
+@property (nonatomic) BOOL isFreeVersion;
 @end
 
 @implementation IQViewController
@@ -24,63 +26,68 @@
 #pragma mark - LifeCycle
 
 - (void)viewDidLoad {
-  [super viewDidLoad];
-  [self setupQuiz];
+    [super viewDidLoad];
+    [self setupQuiz];
 }
 
 #pragma mark - IBActions
 
 - (IBAction)answerButtonPressed:(UIButton *)sender {
-  int correctAnswer = [(NSNumber *)self.questions[self.currentQuestionIndex][@"correctAnswer"] intValue];
-  if (sender.tag == correctAnswer) {
+    int correctAnswer = [(NSNumber *)self.questions[self.currentQuestionIndex][@"correctAnswer"] intValue];
+    if (sender.tag == correctAnswer) {
     self.score++;
     self.scoreLabel.text = [NSString stringWithFormat:@"%ld",(long)self.score];
-  }
-  
-  self.currentQuestionIndex++;
-  [self showNextQuestion];
+    }
+
+    self.currentQuestionIndex++;
+    [self showNextQuestion];
 }
 
 #pragma mark - Private
 
 - (void)setupQuiz {
-  self.navigationItem.title = @"Free Version";
-  self.maxAllowedQuestions = 5;
-  [self setupAds];
-  
-  NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"Questions" ofType:@"plist"];
-  self.questions = [NSArray arrayWithContentsOfFile:plistPath];
-  self.currentQuestionIndex = 0;
-  [self showNextQuestion];
+    if (self.isFreeVersion) {
+        self.navigationItem.title = @"Free Version";
+        self.maxAllowedQuestions = 5;
+        [self setupAds];
+    } else {
+        self.navigationItem.title = @"Paid Version";
+        self.maxAllowedQuestions = 10;
+    }
+    
+    NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"Questions" ofType:@"plist"];
+    self.questions = [NSArray arrayWithContentsOfFile:plistPath];
+    self.currentQuestionIndex = 0;
+    [self showNextQuestion];
 }
 
 - (void)setupAds {
-  ADBannerView *bannerView = [[ADBannerView alloc]initWithFrame:
+    ADBannerView *bannerView = [[ADBannerView alloc]initWithFrame:
                               CGRectMake(0, CGRectGetHeight(self.view.frame) -50, 320, 50)];
-  bannerView.delegate = self;
-  [self.view addSubview: bannerView];
+    bannerView.delegate = self;
+    [self.view addSubview: bannerView];
 }
 
 - (void)showNextQuestion {
-  //1 - handle last question
-  if (self.currentQuestionIndex + 1 > self.maxAllowedQuestions) {
+    //1 - handle last question
+    if (self.currentQuestionIndex + 1 > self.maxAllowedQuestions) {
     [[[UIAlertView alloc] initWithTitle:@"Game Over"
                                 message:[NSString stringWithFormat:@"Your score is %ld",(long)self.score]
                                delegate:self
                       cancelButtonTitle:@"OK"
                       otherButtonTitles:nil] show];
     return;
-  }
-  
-  //2 - update view for next question
-  NSDictionary *questionDetail = self.questions[self.currentQuestionIndex];
-  self.questionLabel.text = questionDetail[@"question"];
-  
-  for (int buttonCount = 1; buttonCount <= 4; buttonCount++) {
+    }
+
+    //2 - update view for next question
+    NSDictionary *questionDetail = self.questions[self.currentQuestionIndex];
+    self.questionLabel.text = questionDetail[@"question"];
+
+    for (int buttonCount = 1; buttonCount <= 4; buttonCount++) {
     UIButton *answerButton = (UIButton *)[self.view viewWithTag:buttonCount];
     [answerButton setTitle:questionDetail[[NSString stringWithFormat:@"answer%d",buttonCount]]
                   forState:UIControlStateNormal];
-  }
+    }
 }
 
 - (void)skipButtonPressed {
@@ -89,25 +96,36 @@
 #pragma mark - UIAlertViewDelegate
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-  [self.navigationController popToRootViewControllerAnimated:YES];
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 #pragma mark - AdViewDelegate
 
 - (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error {
-  NSLog(@"Error Loading: %@", error.localizedDescription);
+    NSLog(@"Error Loading: %@", error.localizedDescription);
 }
 
 - (void)bannerViewDidLoadAd:(ADBannerView *)banner {
-  NSLog(@"Ad Loaded");
+    NSLog(@"Ad Loaded");
 }
 
 - (void)bannerViewWillLoadAd:(ADBannerView *)banner {
-  NSLog(@"Ad Will Load");
+    NSLog(@"Ad Will Load");
 }
 
 - (void)bannerViewActionDidFinish:(ADBannerView *)banner {
-  NSLog(@"Ad Did Finish");
+    NSLog(@"Ad Did Finish");
+}
+
+#pragma Lazy Instantiation
+
+- (BOOL)isFreeVersion
+{
+    #ifdef FREE
+        return YES;
+    #else
+        return NO;
+    #endif
 }
 
 @end

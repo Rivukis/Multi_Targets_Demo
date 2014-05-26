@@ -53,6 +53,7 @@
     } else {
         self.navigationItem.title = @"Paid Version";
         self.maxAllowedQuestions = 10;
+        [self.view addSubview:self.skipQuestionButton];
     }
     
     NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"Questions" ofType:@"plist"];
@@ -91,6 +92,16 @@
 }
 
 - (void)skipButtonPressed {
+    //1
+    self.score++;
+    self.scoreLabel.text = [NSString stringWithFormat:@"%ld",(long)self.score];
+    
+    //2
+    self.currentQuestionIndex++;
+    [self showNextQuestion];
+    
+    //3
+    self.skipQuestionButton.hidden = YES;
 }
 
 #pragma mark - UIAlertViewDelegate
@@ -118,6 +129,18 @@
 }
 
 #pragma Lazy Instantiation
+
+- (UIButton *)skipQuestionButton
+{
+    if (!_skipQuestionButton) {
+        _skipQuestionButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        [_skipQuestionButton setFrame:CGRectMake(20, 80, 100, 44)];
+        [_skipQuestionButton setTitle:@"Skip Question" forState:UIControlStateNormal];
+        [_skipQuestionButton addTarget:self action:@selector(skipButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    }
+    
+    return _skipQuestionButton;
+}
 
 - (BOOL)isFreeVersion
 {

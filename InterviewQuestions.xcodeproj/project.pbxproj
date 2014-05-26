@@ -50,7 +50,7 @@
 
 /* Begin PBXFileReference section */
 		7A3525671933E3D9004877CD /* InterviewQuestionsFull.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewQuestionsFull.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A3525681933E3D9004877CD /* InterviewQuestionsFull.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = InterviewQuestionsFull.plist; path = "/Users/Rivukis/Developer/Tutorial Projects/Interview Questions Starter/InterviewQuestions/InterviewQuestionsFull.plist"; sourceTree = "<absolute>"; };
+		7A3525681933E3D9004877CD /* InterviewQuestionsFull.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = InterviewQuestionsFull.plist; path = "/Users/Rivukis/Developer/Tutorial Projects/Interview Questions Starter/InterviewQuestions/InterviewQuestions/InterviewQuestionsFull.plist"; sourceTree = "<absolute>"; };
 		7A3525691933E76F004877CD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Images/Full/Default-568h@2x.png"; sourceTree = "<group>"; };
 		7A35256A1933E76F004877CD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Images/Full/Default@2x.png"; sourceTree = "<group>"; };
 		7A35256B1933E76F004877CD /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Images/Full/Icon@2x.png"; sourceTree = "<group>"; };
@@ -417,7 +417,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InterviewQuestions/InterviewQuestions-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
-				INFOPLIST_FILE = "$(SRCROOT)/InterviewQuestionsFull.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/InterviewQuestions/InterviewQuestionsFull.plist";
 				PRODUCT_NAME = InterviewQuestionsFull;
 				WRAPPER_EXTENSION = app;
 			};
@@ -428,7 +428,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InterviewQuestions/InterviewQuestions-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/InterviewQuestionsFull.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/InterviewQuestions/InterviewQuestionsFull.plist";
 				PRODUCT_NAME = InterviewQuestionsFull;
 				WRAPPER_EXTENSION = app;
 			};
